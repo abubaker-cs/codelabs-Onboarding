@@ -11,15 +11,12 @@ class ViewPagerAdapter(
     lifecycle: Lifecycle
 ) : FragmentStateAdapter(fm, lifecycle) {
 
-    // Array for storing reference to all of our on-boarding screens.
     private val fragmentList = list
 
-    // Total Items
     override fun getItemCount(): Int {
         return fragmentList.size
     }
 
-    // Current Position
     override fun createFragment(position: Int): Fragment {
         return fragmentList[position]
     }
