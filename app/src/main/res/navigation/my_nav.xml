@@ -11,5 +11,18 @@
         android:name="org.abubaker.onboarding.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash"
+        >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="org.abubaker.onboarding.onboarding.ViewPagerFragment"
+        android:label="ViewPagerFragment"
+        tools:layout="@layout/fragment_view_pager"
         />
+
 </navigation>
