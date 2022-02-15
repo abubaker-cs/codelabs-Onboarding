@@ -1,4 +1,4 @@
-package org.abubaker.onboarding.onboarding.screens
+package org.abubaker.onboarding.fragments.onboarding.screens
 
 import android.content.Context
 import android.os.Bundle
@@ -7,11 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
-import androidx.navigation.ui.NavigationUI
-import org.abubaker.onboarding.R
-import org.abubaker.onboarding.databinding.FragmentSecondScreenBinding
 import org.abubaker.onboarding.databinding.FragmentThirdScreenBinding
 
 
@@ -23,11 +18,12 @@ class ThirdScreen : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         mBinding = FragmentThirdScreenBinding.inflate(inflater, container, false)
 
-        mBinding.finish.setOnClickListener {
+        // Button: Finish
+        mBinding.btnFinish.setOnClickListener {
 
 
             // Navigation.findNavController()

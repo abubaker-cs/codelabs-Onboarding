@@ -1,4 +1,4 @@
-package org.abubaker.onboarding.onboarding.screens
+package org.abubaker.onboarding.fragments.onboarding.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,26 +8,27 @@ import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import org.abubaker.onboarding.R
 import org.abubaker.onboarding.databinding.FragmentFirstScreenBinding
-import org.abubaker.onboarding.databinding.FragmentSecondScreenBinding
 
-class SecondScreen : Fragment() {
+class FirstScreen : Fragment() {
 
-    private lateinit var mBinding: FragmentSecondScreenBinding
+    private lateinit var mBinding: FragmentFirstScreenBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        mBinding = FragmentSecondScreenBinding.inflate(inflater, container, false)
+        mBinding = FragmentFirstScreenBinding.inflate(inflater, container, false)
 
         val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
 
-        mBinding.next2.setOnClickListener {
-            viewPager?.currentItem = 2
+        // Button: Next
+        mBinding.btnNext.setOnClickListener {
+            viewPager?.currentItem = 1
         }
 
         return mBinding.root
     }
+
 
 }

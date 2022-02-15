@@ -1,4 +1,4 @@
-package org.abubaker.onboarding
+package org.abubaker.onboarding.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -7,9 +7,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.HandlerCompat.postDelayed
-import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.navigation.fragment.findNavController
+import org.abubaker.onboarding.R
 
 class SplashFragment : Fragment() {
 

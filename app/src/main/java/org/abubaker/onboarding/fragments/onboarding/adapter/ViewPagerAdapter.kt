@@ -1,4 +1,4 @@
-package org.abubaker.onboarding.onboarding.adapter
+package org.abubaker.onboarding.fragments.onboarding.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

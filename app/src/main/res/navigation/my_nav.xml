@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="org.abubaker.onboarding.SplashFragment"
+        android:name="org.abubaker.onboarding.fragments.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash"
         >
@@ -20,9 +20,16 @@
 
     <fragment
         android:id="@+id/viewPagerFragment"
-        android:name="org.abubaker.onboarding.onboarding.ViewPagerFragment"
+        android:name="org.abubaker.onboarding.fragments.ViewPagerFragment"
         android:label="ViewPagerFragment"
         tools:layout="@layout/fragment_view_pager"
+        />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="org.abubaker.onboarding.fragments.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
         />
 
 </navigation>
