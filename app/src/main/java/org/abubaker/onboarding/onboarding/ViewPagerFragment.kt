@@ -6,6 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import org.abubaker.onboarding.R
+import org.abubaker.onboarding.onboarding.adapter.ViewPagerAdapter
+import org.abubaker.onboarding.onboarding.screens.FirstScreen
+import org.abubaker.onboarding.onboarding.screens.SecondScreen
+import org.abubaker.onboarding.onboarding.screens.ThirdScreen
 
 
 class ViewPagerFragment : Fragment() {
@@ -16,7 +20,28 @@ class ViewPagerFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_view_pager, container, false)
+        val view = inflater.inflate(R.layout.fragment_view_pager, container, false)
+
+        // Array list of all fragments (fiels)
+        val fragmentList = arrayListOf<Fragment>(
+            FirstScreen(),
+            SecondScreen(),
+            ThirdScreen()
+        )
+
+        val adapter = ViewPagerAdapter(
+            fragmentList,
+            requireActivity().supportFragmentManager,
+            lifecycle
+        )
+
+
+
+        // view.viewPager.adapter = adapter
+
+        return view
+
+
     }
 
 }
