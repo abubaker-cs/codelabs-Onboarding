@@ -26,7 +26,6 @@ class SplashFragment : Fragment() {
                 // Skip the Viewpager and move the user directly to the Home page
                 findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
 
-
             } else {
 
                 // Start ViewPager to let the user see on-boarding instructions
@@ -40,7 +39,8 @@ class SplashFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_splash, container, false)
     }
 
-
+    // Here we will be only reading from teh SharedPreferences
+    // We will be returning the "Boolean" value
     private fun onBoardingFinished(): Boolean {
 
         // Get the onBoarding parameter from the SharedPreferences

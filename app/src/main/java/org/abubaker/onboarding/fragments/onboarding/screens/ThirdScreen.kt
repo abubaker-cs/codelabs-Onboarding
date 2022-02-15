@@ -37,6 +37,8 @@ class ThirdScreen : Fragment() {
         return mBinding.root
     }
 
+
+    // Write to the SharedPreferences
     private fun onBoardingFinished() {
 
         // Pass onBoarding to the sharedPref

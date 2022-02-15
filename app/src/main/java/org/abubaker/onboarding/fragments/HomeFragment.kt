@@ -19,10 +19,7 @@ class HomeFragment : Fragment() {
 
         // Inflate the layout for this fragment
         mBinding = FragmentHomeBinding.inflate(inflater, container, false)
-
-
         return mBinding.root
-
 
     }
 
